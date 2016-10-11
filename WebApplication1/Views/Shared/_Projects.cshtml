@@ -1,0 +1,74 @@
+﻿@model WebApplication1.Models.Project
+
+@{
+
+    int numProjectUsers = @Model.ProjectUsers.Count;
+    int numTickets = @Model.ProjectUsers.Count;
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">@Model.Name</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>Users on project: @numProjectUsers</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    Users
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (var s in @Model.ProjectUsers)
+                                                    {
+                                                        <li><a href='@Url.Action("UserView", "Account", new {id = s.Id})'>@s.User.Email</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tickets Assigned: @numTickets</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    Tickets
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (var s in @Model.Tickets)
+                                                    {
+                                                        <li><a href='@Url.Action("Details", "Tickets", new {id = s.Id})'>@s.Title</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <a href='@Url.Action("Create", "ProjectUsers", new {id = Model.Id})' class="btn btn-primary">Add User to Project</a>
+                            <a href='@Url.Action("Delete", "ProjectUsers", new {id = Model.Id})' class="btn btn-primary">Remove User to Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <span class="pull-right">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

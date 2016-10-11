@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNet.Identity
+@using WebApplication1.Models
+
+
+@helper CreateComment(int ticketid, string comment)
+{
+
+    var userId = User.Identity.GetUserId();
+
+    if (ticketid != null && !string.IsNullOrEmpty(comment))
+    {
+        var helper = new UserProjectsHelper();
+        helper.CreateComment(ticketid, userId, comment);
+    }
+
+}

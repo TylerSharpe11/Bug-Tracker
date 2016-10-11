@@ -1,0 +1,186 @@
+﻿@model WebApplication1.Models.Ticket
+@{
+}
+<div class="container">
+    <div class="row">
+       
+        <div class="col-xs-12">
+            <article class="post animated fadeInLeft animation-delay-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2 class="section-title no-margin-top">@Model.Title</h2>
+                        @if (Model.TicketPriority.Name.Equals("High"))
+                        {
+                            <span class="label label-danger pull-right">High</span>
+                        }
+                        @if (Model.TicketPriority.Name.Equals("Medium"))
+                        {
+                            <span class="label label-warning pull-right">Medium</span>
+                        }
+                        @if (Model.TicketPriority.Name.Equals("Low"))
+                        {
+                            <span class="label label-success pull-right">Low</span>
+                        }
+                        <p class="pull-right">Priority: </p>
+                        <br/>
+                        <br/>
+
+                        @if (Model.TicketStatus.Name.Equals("Not Assigned"))
+                        {
+                            <span class="label label-danger pull-right">Not Assigned</span>
+                        }
+                        @if (Model.TicketStatus.Name.Equals("In progress"))
+                        {
+                            <span class="label label-warning pull-right">In progress</span>
+                        }
+                        @if (Model.TicketStatus.Name.Equals("Closed"))
+                        {
+                            <span class="label label-success pull-right">Closed</span>
+                        }
+                        <p class="pull-right">Status: </p>
+                        <br/>
+                        <br/>
+                        <p class="pull-right">Type: @Model.TicketType.Name</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>@Model.Description</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <i class="fa fa-clock-o"></i> &nbsp; @Model.Created <i class="fa fa-user"> </i>
+                            <br/>
+                            <br/>
+                            &nbsp; Owned by: <a href="@Url.Action("UserView", "Account", new {useremail = Model.OwnerUser.Email}, null)"> @Model.OwnerUser.Email</a>
+                            <br/>
+                            <br/>
+
+                            &nbsp;Assigned to: <a href="@Url.Action("UserView", "Account", new {useremail = Model.AssignedUser.Email}, null)"> @Model.AssignedUser.Email</a>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <a class="btn btn-ar btn-primary" href="@Url.Action("Edit", "Tickets", new {id = Model.Id}, null)">Edit Ticket</a>
+                            <button class="btn btn-ar btn-primary" data-toggle="modal" data-target="#@Model.Id.ToString()">New Comment</button>
+                            <button class="btn btn-ar btn-primary" data-toggle="modal" data-target="#@Model.Id.ToString()a">New Attachment</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article> <!-- post -->
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Default Tab</h3>
+                    <div class="tabbable-panel">
+                        <div class="tabbable-line">
+                            <ul class="nav nav-tabs ">
+                                <li class="active">
+                                    <a href="#tab_default_1" data-toggle="tab">
+                                        Ticket Comments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#tab_default_2" data-toggle="tab">
+                                        Ticket Atachments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#tab_default_3" data-toggle="tab">
+                                        Ticket Histories
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab_default_1">
+                                    @foreach (var comment in Model.TicketComments)
+                                    {
+                                        <div>
+                                            @Html.Partial("_TicketCommentsDetails", comment)
+                                        </div>
+                                    }
+                                </div>
+                                <div class="tab-pane" id="tab_default_2">
+                                    @foreach (var attachment in Model.TicketAttachments)
+                                    {
+                                        <div>
+                                            @Html.Partial("_TicketAttachmentsDetails", attachment)
+                                        </div>
+                                    }
+                                </div>
+                                <div class="tab-pane" id="tab_default_3">
+                                    @foreach (var history in Model.TicketHistories)
+                                    {
+                                        <div>
+                                            @Html.Partial("_TicketHistoriesDetails", history)
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for attachment-->
+        
+    </div>
+    <div>
+        @Html.ActionLink("Back to previous page", null, null, null, new { href = Request.UrlReferrer })
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="@Model.Id.ToString()" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md-4">
+        <div class="modal-content">
+            @using (Html.BeginForm())
+            {
+
+                <div class="form-group">
+                    <input type="hidden" name="ticketid" value="@Model.Id">
+                    <div class="modal-body">
+                        <textarea id="commentText" name="commentT" class="form-control" rows="6"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ar btn-default" data-dismiss="modal">Close</button>
+                        <input id="saveCommentBtn" type="submit" value="Save" class="btn btn-ar btn-primary">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="@Model.Id.ToString()a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md-4">
+        <div class="modal-content">
+            @using (Html.BeginForm("MyTickets", "Tickets", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                <div class="form-group">
+                    <input type="hidden" name="ticketid" value="@Model.Id">
+                    <div class="modal-body">
+                        <textarea id="commentText" name="description" class="form-control" rows="6"></textarea>
+                        <input type="file" name="uploadFile" value="Choose File" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ar btn-default" data-dismiss="modal">Close</button>
+                        <input id="saveCommentBtn" type="submit" value="Save" class="btn btn-ar btn-primary">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿@model WebApplication1.Models.ProjectUser
+
+@{
+    ViewBag.Title = "Delete";
+}
+<script type="text/javascript">
+  $(function() {
+      $("#ProjectId").change(function () {
+      $('#TheForm').submit();
+    });
+  });
+
+</script>
+@using (Html.BeginForm("Delete", "ProjectUsers", FormMethod.Post, new { id = "TheForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>ProjectUser</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectId, "ProjectId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProjectId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ProjectId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserId, "UserId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("UserId", (SelectList)ViewBag.UserId, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" name="button1" value="Remove" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

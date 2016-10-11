@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Bug Tracker</title>
+    @RenderSection("AdditionalMeta", false)
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet">
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <style type="text/css">
+
+        .pagination > li > a,
+        .pagination > li > span {
+            background-color: #DC6617;
+        }
+
+        a.btn.dropdown-toggle {
+             color: #ebebeb;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Bug Tracker", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @if (User.IsInRole("Administrator") || User.IsInRole("ProjectManager") || User.IsInRole("Developer") || User.IsInRole("Submitter"))
+                    {
+                        <li>@Html.ActionLink("Dashboard", "Index", "Home")</li>
+                        <li>@Html.ActionLink("My Projects", "MyProjects", "Projects")</li>
+                        <li>@Html.ActionLink("My Tickets", "Mytickets", "Tickets")</li>
+                        <li>@Html.ActionLink("Submit Ticket", "Create", "Tickets")</li>
+                    }
+                    @if (User.IsInRole("Administrator"))
+                    {
+                        <li>
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Admin Links<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Assign Roles", "AdminAssignRole", "Manage")</li>
+                                    <li>@Html.ActionLink("Remove Roles", "AdminRemoveRole", "Manage")</li>
+                                    <li>@Html.ActionLink("Create new Status", "Create", "TicketStatus")</li>
+                                    <li>@Html.ActionLink("Create new Priority", "Create", "TicketPriorities")</li>
+                                    <li>@Html.ActionLink("Create new Ticket Type", "Create", "TicketTypes")</li>
+                                    <li>@Html.ActionLink("See Projects", "MyProjects", "Projects")</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    }
+                    @if (User.IsInRole("ProjectManager") || User.IsInRole("Administrator"))
+                    {
+                        <li>
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Project Manager Links<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Create Project", "Create", "Projects")</li>
+                                    <li>@Html.ActionLink("Assign user to project", "Create", "ProjectUsers")</li>
+                                    <li>@Html.ActionLink("Remove user from project", "Delete", "ProjectUsers")</li>
+                                </ul>
+                            </div>
+                        </li>
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Bug Tracker</p>
+        </footer>
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

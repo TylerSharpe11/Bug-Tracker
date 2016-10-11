@@ -1,0 +1,95 @@
+﻿@model WebApplication1.Models.ApplicationUser
+
+@{
+
+
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">@Model.Email</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+                        <div class="col-md-9 col-lg-9">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>Tickets Owned:</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    Tickets
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (var s in @Model.TicketsOwned)
+                                                    {
+                                                        <li><a href='@Url.Action("Details", "Tickets", new {id = s.Id})'>@s.Title</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tickets Assigned:</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    Tickets
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (var s in @Model.TicketsAssigned)
+                                                    {
+                                                        <li><a href='@Url.Action("Details", "Tickets", new {id = s.Id})'>@s.Title</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Projects In:</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (var s in @Model.ProjectUsers)
+                                                    {
+                                                        <li><a href='@Url.Action("Details", "Projects", new {id = s.Id})'>@s.Project.Name</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><a href="mailto:@Model.Email">@Model.Email</a></td>
+                                    </tr>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <span class="pull-right">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

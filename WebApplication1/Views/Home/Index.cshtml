@@ -1,0 +1,148 @@
+﻿@model PagedList.IPagedList<WebApplication1.Models.Ticket>
+@using Microsoft.AspNet.Identity
+@using PagedList.Mvc;
+@using WebApplication1.Models
+@{
+
+    ViewBag.Title = "Home Page";
+    int counter=1;
+}
+
+<style type="text/css">
+    .custab {
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin: 5% 0;
+        box-shadow: 3px 3px 2px #ccc;
+        transition: 0.5s;
+    }
+
+        .custab:hover {
+            box-shadow: 3px 3px 0px transparent;
+            transition: 0.5s;
+        }
+
+</style>
+
+
+
+<div class="container">
+    <div class="row col-md-12 custyle">
+        <div class="post">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+            {
+
+                <p>
+                    Search: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+                    <input type="submit" value="Search"/>
+                </p>
+            }
+        </div>
+        <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.ActionLink("Title", "Index", new { sortOrder = ViewBag.TitleSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Owner", "Index", new { sortOrder = ViewBag.OwnerSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Assignment", "Index", new { sortOrder = ViewBag.AssignmentSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Created", "Index", new { sortOrder = ViewBag.CreatedSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Updated", "Index", new { sortOrder = ViewBag.UpdatedSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Type", "Index", new { sortOrder = ViewBag.TypeSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Priority", "Index", new { sortOrder = ViewBag.PrioritySortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Status", "Index", new { sortOrder = ViewBag.StatusSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        @Html.ActionLink("Project", "Index", new { sortOrder = ViewBag.ProjectSortParm, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @item.Title
+                    </td>
+                    <td>
+                        @item.OwnerUser.Email
+                    </td>
+                    <td>
+                        @item.AssignedUser.Email
+                    </td>
+                    <td>
+                        @item.Created.ToString("dd. MM. yyyy")
+                    </td>
+                    @if (item.Updated.HasValue)
+                    {
+                        <td>
+                            @item.Updated.Value.ToString("dd. MM. yyyy")
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            @item.Updated
+                        </td>
+                    }
+                    <td>
+                        @item.TicketType.Name
+                    </td>
+                    <td>
+                        @item.TicketPriority.Name
+                    </td>
+                    <td>
+                        @item.TicketStatus.Name
+                    </td>
+                    <td>
+                        @item.Project.Name
+                    </td>
+                    <td class="text-center">
+                        <a class='btn btn-primary btn-xs' href="@Url.Action("Edit", "Tickets", new {id = item.Id}, null)"> Edit</a>
+                        @if (User.IsInRole("Administrator") || User.IsInRole("ProjectManager"))
+                        {
+                            <a href="@Url.Action("Details", "Tickets", new {id = item.Id}, null)" class="btn btn-info btn-xs"> View</a>
+                        }
+                    </td>
+                    @*@<div class="btn-group">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                Action
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("View Ticket Details", "Details", "Tickets", new { id = item.Id }, null)</li>
+                                @if (User.IsInRole("Administrator") || User.IsInRole("ProjectManager"))
+                                {
+
+                                    <li>@Html.ActionLink("Edit Ticket", "Edit", "Tickets", new { id = item.Id }, null)</li>
+                                }
+                                <li>@Html.ActionLink("Add Comment", "Create", "TicketComments", new { TicketId = item.Id }, null)</li>
+                                <li>@Html.ActionLink("Add Attachment", "Create", "TicketAttachments", new { TicketId = item.Id }, null)</li>
+                            </ul>
+                        </div>*@
+                </tr>
+
+            }
+        </table>
+    </div>
+</div>
+
+        <br />
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

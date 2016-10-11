@@ -1,0 +1,40 @@
+﻿@model PagedList.IPagedList<WebApplication1.Models.Project>
+@using Microsoft.AspNet.Identity
+@using PagedList.Mvc;
+@using WebApplication1.Models
+
+@{
+    ViewBag.Title = "Edit";
+    int counter = 1;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+
+            @foreach (var item in Model)
+            {
+
+                if (counter%2 == 0)
+                {
+                    <div class="post animated bounceInDown animation-delay-2">
+                        @Html.Partial("_Projects", item)
+                    </div>
+                }
+                else
+                {
+                    <div class="post animated bounceInUp animation-delay-2">
+                        @Html.Partial("_Projects", item)
+                    </div>
+                }
+                counter++;
+            }
+
+        </div>
+    </div><!-- row -->
+</div>
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("MyProjects",
+    new { page }))
+

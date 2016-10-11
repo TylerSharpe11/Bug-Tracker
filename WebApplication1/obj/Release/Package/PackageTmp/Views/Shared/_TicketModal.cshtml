@@ -1,0 +1,64 @@
+﻿
+<div class="row">
+<div class="col-xs-12">
+
+    @foreach (var item in Model)
+    {
+        <article class="post animated fadeInLeft animation-delay-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="section-title no-margin-top">@item.Title</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>@item.Description</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <i class="fa fa-clock-o"></i> @item.Created <i class="fa fa-user"> </i> <a href="#">Tyler Sharpe</a>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                    </div>
+                    @foreach (var c in item.TicketComments)
+                    {
+                        <div class="row lateral-padding">
+                            <p> @c.Comment</p>
+                            <p class="em-"><i class="fa fa-clock-o"></i> @c.Created<i class="fa fa-user"> </i>
+                            </p>
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-8">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                    </div>
+                    @foreach (var c in item.TicketAttachments)
+                    {
+                        <div class="row lateral-padding">
+                            <p> @c.FileUrl</p>
+                            <p class="em-">
+                                <i class="fa fa-clock-o"></i> @c.Created<i class="fa fa-user"> </i>
+                            </p>
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- post -->
+    }
+
+</div>
+</div>

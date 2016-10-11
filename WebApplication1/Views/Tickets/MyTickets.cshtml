@@ -1,0 +1,161 @@
+﻿@model PagedList.IPagedList<WebApplication1.Models.Ticket>
+@using Microsoft.Ajax.Utilities
+@using Microsoft.AspNet.Identity
+@using PagedList.Mvc;
+@using WebApplication1.Models
+
+@{
+    if (Model == null)
+    {
+        Response.Redirect("/Tickets/Mytickets");
+    }
+}
+
+<div class="container animated fadeInRight">
+    <div class="row">
+        <div class="col-xs-12">
+
+            @foreach (var item in Model)
+            {
+                <article class="post animated fadeInLeft animation-delay-2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2 class="section-title no-margin-top">@item.Title</h2>
+                            @if (item.TicketPriority.Name.Equals("High"))
+                            {
+                                <span class="label label-danger pull-right">High</span>
+                            }
+                            @if (item.TicketPriority.Name.Equals("Medium"))
+                            {
+                                <span class="label label-warning pull-right">Medium</span>
+                            }
+                            @if (item.TicketPriority.Name.Equals("Low"))
+                            {
+                                <span class="label label-success pull-right">Medium</span>
+                            }
+                            <p class="pull-right">Priority: &nbsp; </p>
+                            <br/>
+                            <br />
+                            
+                            @if (item.TicketStatus.Name.Equals("Not Assigned"))
+                            {
+                                <span class="label label-danger pull-right">Not Assigned</span>
+                            }
+                            @if (item.TicketStatus.Name.Equals("In progress"))
+                            {
+                                <span class="label label-warning pull-right">In progress</span>
+                            }
+                            @if (item.TicketStatus.Name.Equals("Closed"))
+                            {
+                                <span class="label label-success pull-right">Closed</span>
+                            }
+                            <p class="pull-right">Status: &nbsp;</p>
+                            <br/>
+                            <br />
+                            <p class="pull-right">Type: @item.TicketType.Name</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>@item.Description</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+
+                                <i class="fa fa-clock-o"></i> &nbsp; @item.Created <i class="fa fa-user"> </i>
+                                <br />
+                                <br />
+                                &nbsp; Owned by: <a href="@Url.Action("UserView", "Account", new {useremail = item.OwnerUser.Email}, null)"> @item.OwnerUser.Email</a>
+                                <br/>
+                                <br/>
+
+                                &nbsp;Assigned to: <a href="@Url.Action("UserView", "Account", new {useremail = item.AssignedUser.Email}, null)"> @item.AssignedUser.Email</a>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <h4 class="section-title no-margin-top lateral-padding">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        @Html.ActionLink("View Ticket Details", "Details", "Tickets", new {id = item.Id}, new {@class = "btn btn-ar btn-primary pull-right animated fadeInRight animation-delay-2"})
+                                        <p class="pull-right">&nbsp;</p>
+                                        <button class="btn btn-primary pull-right animated fadeInRight animation-delay-2" data-toggle="modal" data-target="#@item.Id.ToString()">New Comment</button>
+                                        <p class="pull-right">&nbsp;</p>
+                                         <button class="btn btn-primary pull-right animated fadeInRight animation-delay-2" data-toggle="modal" data-target="#@item.Id.ToString()a">New Attachment</button>
+                                    }
+                                </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <!-- post -->
+                foreach (var c in item.TicketComments)
+                {
+                    <div class="post animated fadeInRight animation-delay-2">
+                        @Html.Partial("_TicketCommentsDetails", c)
+                    </div>
+                }
+                <!-- Modal for comment-->
+               
+            }
+
+        </div>
+    </div><!-- row -->
+
+
+</div>
+@foreach (var item in Model)
+{
+    <div class="modal fade" id="@item.Id.ToString()" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md-4">
+            <div class="modal-content">
+                @using (Html.BeginForm())
+                {
+
+                    <div class="form-group">
+                        <input type="hidden" name="ticketid" value="@item.Id">
+                        <div class="modal-body">
+                            <textarea id="commentText" name="commentT" class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-ar btn-default" data-dismiss="modal">Close</button>
+                            <input id="saveCommentBtn" type="submit" value="Save" class="btn btn-ar btn-primary">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+        <!-- Modal for attachment-->
+        <div class="modal" id="@item.Id.ToString()a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md-4">
+                <div class="modal-content">
+                    @using (Html.BeginForm("MyTickets", "Tickets", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+
+                        <div class="form-group">
+                            <input type="hidden" name="ticketid" value="@item.Id">
+                            <div class="modal-body">
+                                <textarea id="commentText" name="description" class="form-control" rows="6"></textarea>
+                                <input type="file" name="uploadFile" value="Choose File" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-ar btn-default" data-dismiss="modal">Close</button>
+                                <input id="saveCommentBtn" type="submit" value="Save" class="btn btn-ar btn-primary">
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+}
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("MyTickets",
+    new { page }))

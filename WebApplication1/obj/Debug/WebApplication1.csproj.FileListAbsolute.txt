@@ -1,0 +1,455 @@
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Owin.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebGrease.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\PagedList.dll
+C:\Users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\PagedList.xml
+C:\Users\ty\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ty\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\PagedList.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\PagedList.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tt\Documents\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\tt\Documents\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\tt\Documents\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\PagedList.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\PagedList.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\SendGrid.SmtpApi.dll
+C:\Users\ty\Desktop\WebApplication1\WebApplication1\bin\SendGridMail.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Owin.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\PagedList.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\SendGrid.SmtpApi.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\SendGridMail.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\WebGrease.dll
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\PagedList.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ty\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.pdb
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Owin.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\PagedList.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\SendGrid.SmtpApi.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\SendGridMail.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\WebGrease.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\PagedList.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\tt\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.pdb
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll.config
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.pdb
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Owin.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\PagedList.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\SendGrid.SmtpApi.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\SendGridMail.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\WebGrease.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.pdb
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\PagedList.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.dll
+\\Mac\Home\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\WebApplication1.pdb
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Owin.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\PagedList.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\SendGrid.SmtpApi.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\SendGridMail.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\WebGrease.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\PagedList.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\PagedList.Mvc.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\t\Desktop\BugTracker-master\WebApplication1\obj\Debug\WebApplication1.pdb
