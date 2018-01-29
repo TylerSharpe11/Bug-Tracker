@@ -64,10 +64,10 @@ namespace WebApplication1.Controllers
 
         // GET: Tickets/Create
         [Authorize]
-        public async Task <ActionResult> Create()
+        public async Task<ActionResult> Create()
         {
-            
-            var userid=User.Identity.GetUserId();
+
+            var userid = User.Identity.GetUserId();
             var users = await this.help(userid);
             var helper = new UserProjectsHelper();
 
@@ -78,7 +78,7 @@ namespace WebApplication1.Controllers
             }
 
             ViewBag.AssignedUserId = new SelectList(users, "Id", "Email");
-            
+
             ViewBag.ProjectId = new SelectList(projects, "Id", "Name");
             ViewBag.TicketPriorityId = new SelectList(db.TicketPriorities, "Id", "Name");
             ViewBag.TicketStatusId = new SelectList(db.TicketStatus, "Id", "Name");
@@ -96,7 +96,7 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+
                 ticket.Created = new DateTimeOffset(DateTime.Now);
                 ticket.OwnerUserId = User.Identity.GetUserId();
                 db.Tickets.Add(ticket);
@@ -104,7 +104,7 @@ namespace WebApplication1.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            ViewBag.AssignedUserId = new SelectList(db.Users,"Id", "Email", ticket.AssignedUserId);
+            ViewBag.AssignedUserId = new SelectList(db.Users, "Id", "Email", ticket.AssignedUserId);
             ViewBag.OwnerUserId = User.Identity.GetUserId();
             ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Name", ticket.ProjectId);
             ViewBag.TicketPriorityId = new SelectList(db.TicketPriorities, "Id", "Name", ticket.TicketPriorityId);
@@ -125,7 +125,7 @@ namespace WebApplication1.Controllers
             var userid = User.Identity.GetUserId();
             var users = await this.help(userid);
             var helper = new UserProjectsHelper();
-            IList<ApplicationUser> userlist=await helper.UsersOnProject(ticket.ProjectId);
+            IList<ApplicationUser> userlist = await helper.UsersOnProject(ticket.ProjectId);
             IList<ApplicationUser> owner = await helper.FindTicketOwner(id);
             if (ticket == null)
             {
@@ -148,15 +148,15 @@ namespace WebApplication1.Controllers
         public ActionResult Edit([Bind(Include = "Id,Title,Description,Created,Updated,TicketStatusId,TicketPriorityId,TicketTypeId,ProjectId,OwnerUserId,AssignedUserId")] Ticket ticket)
         {
 
-            var u=User.Identity.GetUserId();
-            ticket.Updated =new DateTimeOffset(DateTime.Now);
+            var u = User.Identity.GetUserId();
+            ticket.Updated = new DateTimeOffset(DateTime.Now);
             var tempticket = ticket;
             if (ModelState.IsValid)
             {
                 SaveTicketHistory(u, tempticket);
 
                 db.Entry(ticket).State = EntityState.Modified;
-                
+
                 db.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
@@ -178,7 +178,7 @@ namespace WebApplication1.Controllers
             TicketHistory tickethistory = new TicketHistory();
             tickethistory.UserId = userid;
             tickethistory.TicketId = ticket.Id;
-            string time=new DateTimeOffset(DateTime.Now).ToString();
+            string time = new DateTimeOffset(DateTime.Now).ToString();
             if (ticket.Equals(t))
             {
                 return;
@@ -213,7 +213,7 @@ namespace WebApplication1.Controllers
                 db.SaveChanges();
 
             }
-            if (!ticket.TicketTypeId.Equals(t.TicketPriorityId))
+            if (!ticket.TicketPriorityId.Equals(t.TicketPriorityId))
             {
                 tickethistory.Changed = time;
                 tickethistory.OldValue = t.TicketPriority.Name;
@@ -229,7 +229,7 @@ namespace WebApplication1.Controllers
                 tickethistory.NewValue = ticket.AssignedUserId;
                 tickethistory.Property = "AssignedUserId";
                 db.TicketHistories.Add(tickethistory);
-                string assigneduserid=ticket.AssignedUserId;
+                string assigneduserid = ticket.AssignedUserId;
                 notify(assigneduserid, ticket);
                 db.SaveChanges();
             }
@@ -240,20 +240,20 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                var u= db.Users.Find(userid);
-                string email=u.Email;
+                var u = db.Users.Find(userid);
+                string email = u.Email;
                 //Replace this with your own correct Gmail Address
 
                 string to = email;
                 //Replace this with the Email Address 
                 //to whom you want to send the mail
-
+                string from = "tylergs776@gmail.com";
                 System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
                 mail.To.Add(to);
                 mail.From = new MailAddress(from, "Admin", System.Text.Encoding.UTF8);
                 mail.Subject = "You've been assigned a ticket";
                 mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.Body = "You've been assigned this ticket"+t.Title+t.Description;
+                mail.Body = "You've been assigned this ticket" + t.Title + t.Description;
                 mail.BodyEncoding = System.Text.Encoding.UTF8;
                 mail.IsBodyHtml = true;
                 mail.Priority = MailPriority.High;
@@ -262,7 +262,7 @@ namespace WebApplication1.Controllers
 
                 //Add the Creddentials- use your own email id and password
                 System.Net.NetworkCredential nt =
-                new System.Net.NetworkCredential(from, "SuperSecret");
+                new System.Net.NetworkCredential(from, "secret");
 
                 client.Port = 587; // Gmail works on this port
                 client.EnableSsl = true; //Gmail works on Server Secured Layer
@@ -316,7 +316,7 @@ namespace WebApplication1.Controllers
         }
         public ActionResult MyTickets(int? page)
         {
-            var userid=User.Identity.GetUserId();
+            var userid = User.Identity.GetUserId();
             int pageSize = 5;
             int pageNumber = (page ?? 1);
             var tickets = db.Tickets.Where(t => t.OwnerUserId == userid);
@@ -330,10 +330,10 @@ namespace WebApplication1.Controllers
         public ActionResult MyTickets(HttpPostedFileBase uploadFile)
         {
             var file = uploadFile;
-            if (file != null && file.ContentLength > 0 && Request["description"]!=null)
+            if (file != null && file.ContentLength > 0 && Request["description"] != null)
             {
 
-                var ticketAttachment=new TicketAttachment();
+                var ticketAttachment = new TicketAttachment();
                 // extract only the fielname
                 var fileName = Path.GetFileName(file.FileName);
 
@@ -342,7 +342,7 @@ namespace WebApplication1.Controllers
                 var path = Path.Combine(Server.MapPath("~/uploads"), fileName);
                 file.SaveAs(path);
                 ticketAttachment.FilePath = path;
-                ticketAttachment.FileUrl = "~/uploads/"+fileName;
+                ticketAttachment.FileUrl = "~/uploads/" + fileName;
                 ticketAttachment.Created = new DateTimeOffset(DateTime.Now);
                 var userid = User.Identity.GetUserId();
                 ticketAttachment.UserId = userid;
@@ -351,7 +351,7 @@ namespace WebApplication1.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
-            if (!Request["commentT"].IsNullOrWhiteSpace() && Request["ticketid"]!= null)
+            if (!Request["commentT"].IsNullOrWhiteSpace() && Request["ticketid"] != null)
             {
                 string ticketId = Request["ticketid"];
                 int t = Convert.ToInt32(ticketId);
@@ -378,7 +378,7 @@ namespace WebApplication1.Controllers
             ticketComment.TicketId = ticketid;
             ticketComment.Comment = comment;
 
-            if (ticketid!=null && !string.IsNullOrEmpty(comment))
+            if (ticketid != null && !string.IsNullOrEmpty(comment))
             {
                 db.TicketComments.Add(ticketComment);
                 db.SaveChanges();
