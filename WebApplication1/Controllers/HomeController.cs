@@ -67,7 +67,7 @@ namespace WebApplication1.Controllers
             }
             if (manager.IsInRole(user.Id, "Submitter") && !manager.IsInRole(user.Id, "Administrator"))
             {
-                var t= tickets.Where(s => s.OwnerUserId.Equals(user.Id));
+                var t= tickets.Where(s => s.AssignedUserId.Equals(user.Id));
                 ticketList.AddRange(t);
             }
             if (manager.IsInRole(user.Id, "ProjectManager") && !manager.IsInRole(user.Id, "Administrator"))
