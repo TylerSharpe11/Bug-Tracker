@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>f37a1eff</NuGetPackageImportStamp>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -283,7 +284,6 @@
     <Content Include="css\variables.less" />
     <Content Include="css\_bootswatch.scss" />
     <Content Include="css\_variables.scss" />
-    <Content Include="App_Code\MyHelpers.cshtml" />
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - FTP %284%29.pubxml" />
@@ -296,6 +296,7 @@
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - Web Deploy %285%29.pubxml" />
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - Web Deploy %286%29.pubxml" />
     <None Include="Properties\PublishProfiles\sharpet-bugtracker - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\tylergs776-Bugtracker - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\TylersBlog1 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\TylersBlog1 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -403,6 +404,7 @@
     <Content Include="Views\Projects\MyProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

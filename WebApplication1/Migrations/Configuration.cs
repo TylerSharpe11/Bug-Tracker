@@ -76,7 +76,116 @@ namespace WebApplication1.Migrations
                 manager.Create(user, "Password2");
                 manager.AddToRoles(user.Id, new string[] { "Administrator", "Developer" });
             }
+            if (context.Users.Count() < 10)
+            {
+                var store = new UserStore<ApplicationUser>(context);
+                var manager = new UserManager<ApplicationUser>(store);
+                var p = "password";
+                var user = new ApplicationUser
+                {
+                    UserName = "bill5",
+                    Email = "bill5@email.com",
+                };
 
+                manager.Create(user, p);
+                manager.AddToRoles(user.Id, "Developer");
+
+
+                var user2 = new ApplicationUser
+                {
+                    UserName = "bob33",
+                    Email = "bob33@email.com",
+                };
+
+                manager.Create(user2, p);
+                manager.AddToRoles(user2.Id, "Developer");
+
+
+                var user3 = new ApplicationUser
+                {
+                    UserName = "jane7",
+                    Email = "jane7@email.com",
+                };
+
+                manager.Create(user3, p);
+                manager.AddToRoles(user3.Id, "Developer");
+
+                var user4 = new ApplicationUser
+                {
+                    UserName = "john21",
+                    Email = "john21@email.com",
+                };
+                manager.Create(user4, p);
+                manager.AddToRoles(user4.Id, "Developer");
+
+                var user5 = new ApplicationUser
+                {
+                    UserName = "tyler87",
+                    Email = "tyler87@email.com",
+                };
+                manager.Create(user5, p);
+                manager.AddToRoles(user5.Id, "Developer");
+
+
+                var user6 = new ApplicationUser
+                {
+                    UserName = "evan67",
+                    Email = "evan67@email.com",
+                };
+                manager.Create(user6, p);
+                manager.AddToRoles(user6.Id, "Developer");
+
+                var user7 = new ApplicationUser
+                {
+                    UserName = "jill34",
+                    Email = "jill34@email.com",
+                };
+                manager.Create(user7, p);
+                manager.AddToRoles(user7.Id, "Developer");
+
+                var user8 = new ApplicationUser
+                {
+                    UserName = "deangelo34",
+                    Email = "deangelo34@email.com",
+                };
+                manager.Create(user8, p);
+                manager.AddToRoles(user8.Id, "Developer");
+
+                var user9 = new ApplicationUser
+                {
+                    UserName = "steve89",
+                    Email = "steve89@email.com",
+                };
+                manager.Create(user9, p);
+                manager.AddToRoles(user9.Id, "Submitter");
+
+
+                var user10 = new ApplicationUser
+                {
+                    UserName = "jake17",
+                    Email = "jake17@email.com",
+                };
+                manager.Create(user10, p);
+                manager.AddToRoles(user10.Id, "ProjectManager");
+
+
+                var user11 = new ApplicationUser
+                {
+                    UserName = "cam1",
+                    Email = "cam1@email.com",
+                };
+                manager.Create(user11, p);
+                manager.AddToRoles(user11.Id, "ProjectManager");
+
+
+                var user12 = new ApplicationUser
+                {
+                    UserName = "greg81",
+                    Email = "greg81@email.com",
+                };
+                manager.Create(user12, p);
+                manager.AddToRoles(user12.Id, "Submitter");
+            }
             var st = new UserStore<ApplicationUser>(context);
             var userManager = new UserManager<ApplicationUser>(st);
             var userId = userManager.FindByEmail("sharpety12@ecualumni.ecu.edu").Id;
@@ -89,21 +198,21 @@ namespace WebApplication1.Migrations
             var sid = new ProjectUser {UserId = submitterid};
             var uset = new HashSet<ProjectUser> {a, pm, d, sid};
             var projects = new List<Project>
-                {
-                    new Project { Name = "The Big Lebowski2", ProjectUsers = uset},
-                    new Project { Name = "Peterkin2" , ProjectUsers = uset },
-                    new Project { Name = "Ferris2" , ProjectUsers = uset},
-                    new Project { Name = "Newman2" , ProjectUsers = uset},
-                    new Project { Name = "Kramer2", ProjectUsers = uset }
-                };
-                if (!context.Projects.Any(r => r.Name == "The Big Lebowski2"))
-                {
-                 
-                    projects.ForEach(p => context.Projects.Add(p));
-                    context.SaveChanges();
-                }
+            {
+                new Project { Name = "The Big Lebowski" },
+                new Project { Name = "Peterkin" },
+                new Project { Name = "Ferris" },
+                new Project { Name = "Newman" },
+                new Project { Name = "Kramer" }
+            };
 
-                var priorities = new List<TicketPriority>
+            if (!context.Projects.Any(r => r.Name == "The Big Lebowski"))
+            {
+                projects.ForEach(p => context.Projects.Add(p));
+                context.SaveChanges();
+            }
+
+            var priorities = new List<TicketPriority>
                     {
                         new TicketPriority { Name = "High" },
                         new TicketPriority { Name = "Medium" },
@@ -275,116 +384,7 @@ namespace WebApplication1.Migrations
                     tickets.ForEach(t => context.Tickets.Add(t));
                     context.SaveChanges();
                 }
-            if(context.Users.Count()<10)
-            {
-                var store = new UserStore<ApplicationUser>(context);
-                var manager = new UserManager<ApplicationUser>(store);
-                var p = "password";
-                var user = new ApplicationUser
-                {
-                    UserName = "bill5",
-                    Email = "bill5@email.com",
-                };
 
-                manager.Create(user, p);
-                manager.AddToRoles(user.Id, "Developer");
-
-
-                var user2 = new ApplicationUser
-                {
-                    UserName = "bob33",
-                    Email = "bob33@email.com",
-                };
-
-                manager.Create(user2, p);
-                manager.AddToRoles(user2.Id, "Developer");
-
-
-                var user3 = new ApplicationUser
-                {
-                    UserName = "jane7",
-                    Email = "jane7@email.com",
-                };
-
-                manager.Create(user3, p);
-                manager.AddToRoles(user3.Id, "Developer");
-
-                var user4 = new ApplicationUser
-                {
-                    UserName = "john21",
-                    Email = "john21@email.com",
-                };
-                manager.Create(user4, p);
-                manager.AddToRoles(user4.Id, "Developer");
-
-                var user5 = new ApplicationUser
-                {
-                    UserName = "tyler87",
-                    Email = "tyler87@email.com",
-                };
-                manager.Create(user5, p);
-                manager.AddToRoles(user5.Id, "Developer");
-
-
-                var user6 = new ApplicationUser
-                {
-                    UserName = "evan67",
-                    Email = "evan67@email.com",
-                };
-                manager.Create(user6, p);
-                manager.AddToRoles(user6.Id, "Developer");
-
-                var user7 = new ApplicationUser
-                {
-                    UserName = "jill34",
-                    Email = "jill34@email.com",
-                };
-                manager.Create(user7, p);
-                manager.AddToRoles(user7.Id, "Developer");
-
-                var user8 = new ApplicationUser
-                {
-                    UserName = "deangelo34",
-                    Email = "deangelo34@email.com",
-                };
-                manager.Create(user8, p);
-                manager.AddToRoles(user8.Id, "Developer");
-
-                var user9 = new ApplicationUser
-                {
-                    UserName = "steve89",
-                    Email = "steve89@email.com",
-                };
-                manager.Create(user9, p);
-                manager.AddToRoles(user9.Id, "Submitter");
-
-
-                var user10 = new ApplicationUser
-                {
-                    UserName = "jake17",
-                    Email = "jake17@email.com",
-                };
-                manager.Create(user10, p);
-                manager.AddToRoles(user10.Id, "ProjectManager");
-
-
-                var user11 = new ApplicationUser
-                {
-                    UserName = "cam1",
-                    Email = "cam1@email.com",
-                };
-                manager.Create(user11, p);
-                manager.AddToRoles(user11.Id, "ProjectManager");
-
-
-                var user12 = new ApplicationUser
-                {
-                    UserName = "greg81",
-                    Email = "greg81@email.com",
-                };
-                manager.Create(user12, p);
-                manager.AddToRoles(user12.Id, "Submitter");
-            }
         }
     }
 }
