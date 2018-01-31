@@ -150,7 +150,7 @@ namespace WebApplication1.Controllers
 
             var u = User.Identity.GetUserId();
             ticket.Updated = new DateTimeOffset(DateTime.Now);
-            var tempticket = ticket;
+            Ticket tempticket = db.Tickets.AsNoTracking().Single(tick => tick.Id == ticket.Id);
             if (ModelState.IsValid)
             {
                 SaveTicketHistory(u, tempticket);
@@ -247,7 +247,7 @@ namespace WebApplication1.Controllers
                 string to = email;
                 //Replace this with the Email Address 
                 //to whom you want to send the mail
-                string from = "tylergs776@gmail.com";
+                string from = "tgsharpe210@gmail.com";
                 System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
                 mail.To.Add(to);
                 mail.From = new MailAddress(from, "Admin", System.Text.Encoding.UTF8);
@@ -262,7 +262,7 @@ namespace WebApplication1.Controllers
 
                 //Add the Creddentials- use your own email id and password
                 System.Net.NetworkCredential nt =
-                new System.Net.NetworkCredential(from, "secret");
+                new System.Net.NetworkCredential(from, "Secret");
 
                 client.Port = 587; // Gmail works on this port
                 client.EnableSsl = true; //Gmail works on Server Secured Layer
@@ -319,7 +319,7 @@ namespace WebApplication1.Controllers
             var userid = User.Identity.GetUserId();
             int pageSize = 5;
             int pageNumber = (page ?? 1);
-            var tickets = db.Tickets.Where(t => t.OwnerUserId == userid);
+            var tickets = db.Tickets.Where(t => t.AssignedUserId == userid);
             var ticketList = new List<Ticket>();
             var qlist = tickets.AsQueryable();
 
